@@ -14,11 +14,15 @@ function pesquisar() {
     `  
     return
   }
-
+  campoPesquisa.value = campoPesquisa.value.toLowerCase()
   let resultados = ""
+  let nome = ""
+  let descricao = ""
 
   for (let char of characters){
-    if (char.name.includes(campoPesquisa.value)){
+    nome = char.name.toLocaleLowerCase()
+    descricao = char.description.toLocaleLowerCase()
+    if (nome.includes(campoPesquisa.value) || descricao.includes(campoPesquisa.value)){
       resultados +=`
       <div class="item-resultado">
         <h2>
