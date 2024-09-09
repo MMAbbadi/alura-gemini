@@ -5,7 +5,7 @@ function pesquisar() {
 
   console.log(campoPesquisa.value)
   if (campoPesquisa.value === ""){
-    section.innerHTML +=`
+    section.innerHTML = `
     <div class="item-resultado">
       <h2>
         Informação Indisponivel
