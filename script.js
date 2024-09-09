@@ -18,11 +18,14 @@ function pesquisar() {
   let resultados = ""
   let nome = ""
   let descricao = ""
+  let pais = ""
 
   for (let char of characters){
     nome = char.name.toLocaleLowerCase()
     descricao = char.description.toLocaleLowerCase()
-    if (nome.includes(campoPesquisa.value) || descricao.includes(campoPesquisa.value)){
+    pais = char.country.toLocaleLowerCase()
+
+    if (nome.includes(campoPesquisa.value) || descricao.includes(campoPesquisa.value) || pais.includes(campoPesquisa.value)){
       resultados +=`
       <div class="item-resultado">
         <h2>
