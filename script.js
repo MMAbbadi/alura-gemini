@@ -3,12 +3,11 @@ function pesquisar() {
   let section = document.getElementById('resultados-pesquisa');
   let campoPesquisa = document.getElementById('campo-pesquisa');
 
-  console.log(campoPesquisa.value)
   if (campoPesquisa.value === ""){
-    section.innerHTML = `
+    section.innerHTML =`
     <div class="item-resultado">
       <h2>
-        Informação Indisponivel
+        Busca Inválida
       </h2>
     </div>
     `  
@@ -38,6 +37,17 @@ function pesquisar() {
       </div>
     `  
     }
+  }
+
+  if(!resultados){
+    section.innerHTML =`
+    <div class="item-resultado">
+      <h2>
+        Informação Indisponivel
+      </h2>
+    </div>
+    `  
+    return 
   }
   
   section.innerHTML = resultados
