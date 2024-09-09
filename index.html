@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Alura Gemini</title>
+  </head>
+  <body>
+    <header>
+      <h1>Personagens Tekken 8</h1>
+    </header>
+    <main>
+      <section style="display: flex; flex-direction: column;  justify-content: center; gap: 5px">
+        <input type="text" placeholder="Digite o nome de um Personagem..." id="campo-pesquisa"/>
+        <button onclick="pesquisar()">Pesquisar</button>
+        <a href="https://en.bandainamcoent.eu/tekken/tekken-8" target="_blank">Tekken Site</a>
+      </section>
+      <section class="resultados-pesquisa" id ="resultados-pesquisa">
+      </section>
+    </main>
+    <footer>
+      <p>2024 - Personagens Tekken 8 . Todos os direitos reservados</p>
+      <p>Contato: xxxxxxxxx@xxxxxx.com</p>
+    </footer>
+    <script src="dados.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
